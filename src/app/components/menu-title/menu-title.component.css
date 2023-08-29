@@ -6,6 +6,7 @@
     margin: 15px;
     font-size: 120px;
     display: flex;
+    text-align: center;
     justify-content: center;
     font-weight: bolder;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -13,5 +14,12 @@
 
 .menu_title_container hr{
     margin: 20px;
+
+}
+
+@media(max-width:767px){
+    .menu_title_container h1{
+        font-size: 60px;
+    }
 
 }

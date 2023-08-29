@@ -1,4 +1,5 @@
-.container_big-card{
+/* Estilos padrão para telas maiores */
+.container_big-card {
     width: 450px;
     height: 500px;
     display: flex;
@@ -6,22 +7,48 @@
     align-items: flex-start;
     justify-content: flex-start;
     margin-right: 20px;
-}
-
-.big-card-photo img{
-    height:250px;
-    width:450px;
-}
-
-.big-card-title h1{
+  }
+  
+  .big-card-photo img {
+    height: 250px;
+    width: 450px;
+  }
+  
+  .big-card-title h1 {
     font-size: 30px;
     margin-top: 10px;
-}
-.big-card-title a{
+  }
+  
+  .big-card-title a {
     text-decoration: none;
-}
-
-.big-card-description p{
+  }
+  
+  .big-card-description p {
     color: grey;
     margin-top: 10px;
-}
+  }
+  
+  /* Media query para telas menores que 600px de largura */
+  @media (max-width: 600px) {
+    .container_big-card {
+      width: 100%; /* Utilize a largura total da tela */
+      height: auto; /* Ajuste a altura automaticamente */
+      margin-right: 0; /* Remova a margem direita */
+    }
+  
+    .big-card-photo img {
+      width: 100%; /* Utilize a largura total da tela */
+      height: auto; /* Ajuste a altura automaticamente */
+    }
+  
+    .big-card-title h1 {
+      font-size: 24px; /* Reduza o tamanho da fonte */
+      margin-top: 8px; /* Ajuste a margem superior */
+    }
+
+    .big-card-description p {
+        margin-bottom: 30px;
+        border-bottom: 1px solid white;
+      }
+  }
+  

@@ -4,3 +4,12 @@
     flex-direction: row;
     justify-content: center;
 }
+
+@media (max-width: 780px) {
+    .articles{
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+}

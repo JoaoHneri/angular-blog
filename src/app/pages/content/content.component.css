@@ -1,29 +1,57 @@
-.container-content{
-    border: 1px solid white;
+.container-content {
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
-     
-}
-
-.content-cover{
-    
-}
-
-.content-cover img{
-    border: 4px solid grey;  
+  }
+  
+  .container-content a {
+    text-decoration: none;
+    margin: 20px;
+  }
+  
+  .content-cover img {
+    border: 4px solid grey;
     border-radius: 5px;
-    width: 500px;
-    height: 300px;
-}
-
-.content-description{
+    width: 100%; /* Utilize a largura total da tela */
+    max-width: 500px; /* Limite a largura máxima */
+    height: auto; /* Ajuste a altura automaticamente */
+  }
+  
+  .content-description {
     margin-top: 10px;
-}
+    width: 750px;
 
-.content-description p {
+  }
+  
+  .content-title {
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .content-description p {
     color: grey;
-}
+
+
+  }
+  
+  /* Media query para telas menores que 600px de largura */
+  @media (max-width: 600px) {
+    .container-content {
+      margin-top: 10px; /* Reduza a margem superior */
+    }
+  
+    .content-title {
+      margin: 15px;
+      font-size: 10px; /* Reduza a margem */
+    }
+  .content-description{
+    width: 100%;
+  }
+    .content-description p {
+      margin: 10px; /* Reduza a margem */
+    }
+  }
+  

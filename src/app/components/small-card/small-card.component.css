@@ -1,28 +1,59 @@
-.container-small-card{
+/* Estilos padrão para telas maiores */
+.container-small-card {
     width: 700px;
     margin-bottom: 15px;
-
-}
-.div-small-card{
+  }
+  
+  .div-small-card {
     display: flex;
     flex-direction: row;
-}
-.small-card-photo img{
+  }
+  
+  .small-card-photo img {
     width: 200px;
     min-width: 200px;
     margin-right: 20px;
-}
-
-.small-card-title{
+  }
+  
+  .small-card-title {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.small-card-title a {
+  }
+  
+  .small-card-title a {
     text-decoration: none;
-}
-
-.small-card-separator{
+  }
+  
+  .small-card-separator {
     margin-top: 10px;
-}
+  }
+  
+  /* Media query para telas menores que 600px de largura */
+  @media (max-width: 600px) {
+    .container-small-card {
+      width: 100%; /* Utilize a largura total da tela */
+    }
+  
+    .div-small-card {
+      flex-direction: column; /* Alterne para uma coluna para empilhar os elementos */
+      align-items: center; /* Centralize os elementos na horizontal */
+    }
+  
+    .small-card-photo img {
+      width: 100%; /* Utilize a largura total da tela */
+      min-width: auto; /* Remova a largura mínima */
+      margin-right: 0; /* Remova a margem direita */
+      margin-bottom: 10px; /* Adicione um espaçamento inferior */
+    }
+  
+    .small-card-title {
+      justify-content: flex-start; /* Alinhe o título ao início */
+      margin-top: 10px; /* Adicione um espaçamento superior */
+    }
+  
+    .small-card-title a {
+      font-size: 18px; /* Reduza o tamanho da fonte */
+    }
+  }
+  

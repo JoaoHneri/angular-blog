@@ -3,7 +3,7 @@
         <img src="{{photoCover}}" alt="Logo_Angular" >
     </div>
     <div class="big-card-title">
-        <h1><a href="youtube.com">{{cardTitle}}</a> </h1>
+        <h1><a [routerLink]="['content', id]">{{cardTitle}}</a> </h1>
     </div>
     <div class="big-card-description">
         <p>{{cardDescription}}.</p>
